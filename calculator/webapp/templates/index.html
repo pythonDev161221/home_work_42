@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>First number:
+    <input name="first_num" type="number">
+</p>
+<p>Second number:
+    <input name="second_num" type="number">
+</p>
+    <p>
+        <div>
+    <input type="radio" id="add" name="operation" value="add" checked> <label for="add">add</label>
+</div>
+        <div>
+            <input type="radio" id="subtract" name="operation" value="subtract"> <label for="subtract">subtract</label>
+        </div>
+        <div>
+            <input type="radio" id="multiply" name="operation" value="multiply"> <label for="multiply">multiply</label>
+        </div>
+    <div>
+        <input type="radio" id="divide" name="operation" value="divide"> <label for="divide">divide</label>
+    </div>
+
+    </p>
+    <input type="submit" value="Calculate">
+</form>
+
+
+</body>
+</html>
